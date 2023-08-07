@@ -12,6 +12,7 @@ import Container from './componts/Container';
 import ExecuteFunction from './componts/ExecuteFunction';
 import Message from './componts/Message';
 import ChanseMessegeState from './componts/ChanseMessegeState';
+import UserDetails from './componts/UserDetails';
 
 function App() {
   //const name = 'Jão'
@@ -81,6 +82,9 @@ function App() {
       {/* state lift */}
       <Message msg={message} />
       <ChanseMessegeState handleMessage={handleMessage} />
+
+      {/* desafio */}
+      <UserDetails />
     </div>
   );
 }
