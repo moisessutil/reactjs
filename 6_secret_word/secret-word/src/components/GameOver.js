@@ -9,7 +9,7 @@ const GameOver = ({ retry, score }) => {
       </h2>
       <button onClick={retry}>Reiniciar</button>
     </div>
-  );
-};
+  )
+}
 
-export default GameOver;
+export default GameOver

@@ -13,18 +13,18 @@ const Game = ({
   guesses,
   score,
 }) => {
-  const [letter, setLetter] = useState("");
-  const letterInputRef = useRef(null);
+  const [letter, setLetter] = useState("")
+  const letterInputRef = useRef(null)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    verifyLetter(letter);
+    verifyLetter(letter)
 
-    setLetter("");
+    setLetter("")
 
-    letterInputRef.current.focus();
-  };
+    letterInputRef.current.focus()
+  }
 
   return (
     <div className="game">
@@ -69,7 +69,7 @@ const Game = ({
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Game;
+export default Game
