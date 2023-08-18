@@ -27,7 +27,7 @@ function App() {
   
   const [guessedLetters, setGuessedLetters] = useState([])
   const [wrongLetters, setWrongLetters] = useState([])
-  const [guesses, setGuesses] = useState(5)
+  const [guesses, setGuesses] = useState(10)
   const [score, setScore] = useState(0)
 
   console.log(words)
@@ -103,7 +103,7 @@ function App() {
   // restart the game
   const retry = () => {
     setScore(0)
-    setGuesses(3)
+    setGuesses(10)
     setGameStage(stages[0].name)
   }
 
